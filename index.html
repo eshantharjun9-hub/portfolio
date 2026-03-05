@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio — Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">dev<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-eyebrow">Frontend Developer — Open to opportunities</div>
+  <h1 class="hero-title">
+    Building<br>
+    <span class="outline">interfaces</span><br>
+    that <span class="accent">matter.</span>
+  </h1>
+  <p class="hero-sub">
+    I craft fast, accessible, and visually precise digital experiences. From design systems to interactive products — pixel-perfect, always.
+  </p>
+  <div class="hero-cta">
+    <a href="#projects" class="btn btn-primary">View Work</a>
+    <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+  </div>
+  <div class="hero-scroll">Scroll to explore</div>
+  <div class="hero-stats">
+    <div class="stat-badge">
+      <div class="num">3+</div>
+      <div class="label">Years exp.</div>
+    </div>
+    <div class="stat-badge">
+      <div class="num">20+</div>
+      <div class="label">Projects</div>
+    </div>
+    <div class="stat-badge">
+      <div class="num">12+</div>
+      <div class="label">Clients</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label reveal">Selected Work</div>
+  <h2 class="section-title reveal reveal-delay-1">Featured<br>Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- Featured project — Weather App -->
+    <div class="project-card featured reveal">
+      <div>
+        <div class="project-num">01 / Featured</div>
+        <div class="project-tag">Weather App</div>
+        <div class="project-name">Weather App 🌤️</div>
+        <p class="project-desc">A clean, real-time weather application that lets users search any city and get instant forecasts. Built with a focus on intuitive UX, live API data, and a responsive layout that works beautifully on any device.</p>
+        <div class="project-stack">
+          <span class="stack-tag">HTML</span>
+          <span class="stack-tag">CSS</span>
+          <span class="stack-tag">JavaScript</span>
+          <span class="stack-tag">Weather API</span>
+        </div>
+        <a href="https://weather-app-kappa-pied-85.vercel.app/" target="_blank" rel="noopener" class="project-link">View Live Project</a>
+      </div>
+      <div class="project-visual weather-visual">
+        <div class="weather-preview">
+          <div class="wp-icon">🌤️</div>
+          <div class="wp-temp">24°</div>
+          <div class="wp-city">Search any city</div>
+          <div class="wp-details">
+            <span>💧 Humidity</span>
+            <span>💨 Wind</span>
+            <span>🌡️ Feels like</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 — Drum Kit -->
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-num">02</div>
+      <div class="project-tag">Interactive</div>
+      <div class="project-name">Drum Kit 🥁</div>
+      <p class="project-desc">An in-browser drum machine triggered by keyboard keys or mouse clicks. Each key fires a unique drum sound with satisfying visual feedback — a fun deep-dive into DOM events and audio APIs.</p>
+      <div class="project-stack">
+        <span class="stack-tag">HTML</span>
+        <span class="stack-tag">CSS</span>
+        <span class="stack-tag">JavaScript</span>
+        <span class="stack-tag">Web Audio</span>
+      </div>
+      <div class="drum-keys-preview">
+        <span class="dk">D</span>
+        <span class="dk">F</span>
+        <span class="dk">G</span>
+        <span class="dk">H</span>
+        <span class="dk">J</span>
+        <span class="dk">K</span>
+      </div>
+      <a href="https://eshantharjun9-hub.github.io/drum-kit/" target="_blank" rel="noopener" class="project-link" style="margin-top:20px;">View Live Project</a>
+    </div>
+
+    <!-- Card 3 — Notes App -->
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-num">03</div>
+      <div class="project-tag">Productivity</div>
+      <div class="project-name">My Notes ✨</div>
+      <p class="project-desc">A clean, minimal notes app to quickly capture and manage your thoughts. Instant note creation, simple UI, and persistent storage — everything you need, nothing you don't.</p>
+      <div class="project-stack">
+        <span class="stack-tag">HTML</span>
+        <span class="stack-tag">CSS</span>
+        <span class="stack-tag">JavaScript</span>
+        <span class="stack-tag">LocalStorage</span>
+      </div>
+      <div class="notes-preview">
+        <div class="note-chip">📝 Meeting notes...</div>
+        <div class="note-chip">💡 New idea...</div>
+        <div class="note-chip add-chip">＋ New note</div>
+      </div>
+      <a href="https://nots-app-eight.vercel.app/" target="_blank" rel="noopener" class="project-link" style="margin-top:20px;">View Live Project</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label reveal">About</div>
+  <h2 class="section-title reveal reveal-delay-1">The person<br><span class="outline-static">behind the code</span></h2>
+  <div class="about-grid">
+    <div class="about-text reveal reveal-delay-2">
+      <p>I'm a frontend developer with a sharp eye for design and a deep love for the craft of building interfaces. I believe <strong>the best UIs are invisible</strong> — they get out of the way and let people do what they came to do.</p>
+      <p>My background spans startups to enterprise products. I'm equally comfortable whiteboarding in Figma and diving into complex state management problems.</p>
+      <p>When I'm not coding, I'm probably obsessing over type specimens, studying motion design, or contributing to open-source tools I use every day.</p>
+      <div class="about-cta">
+        <a href="#contact" class="btn btn-primary">Let's work together →</a>
+      </div>
+    </div>
+    <div class="skills-block reveal reveal-delay-3">
+      <div class="skills-title">Core Skills</div>
+      <div class="skill-row">
+        <span class="skill-name">React / Next</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="95"></div></div>
+        <span class="skill-pct">95%</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">TypeScript</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="90"></div></div>
+        <span class="skill-pct">90%</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">CSS / Anim.</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="92"></div></div>
+        <span class="skill-pct">92%</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">Figma</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="85"></div></div>
+        <span class="skill-pct">85%</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">Node / APIs</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="75"></div></div>
+        <span class="skill-pct">75%</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">Three.js</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="68"></div></div>
+        <span class="skill-pct">68%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner reveal">
+    <div class="section-label contact-section-label">Contact</div>
+    <div class="contact-headline">
+      Let's build<br>something <span class="outline">great.</span>
+    </div>
+    <p class="contact-sub">Available for freelance projects and full-time positions. Don't hesitate to reach out — I reply within 24 hours.</p>
+    <div class="contact-links">
+      <a href="/cdn-cgi/l/email-protection#e088858c8c8fa0998f959293899485ce848596" class="contact-link">✉ Email</a>
+      <a href="#" class="contact-link">↗ LinkedIn</a>
+      <a href="#" class="contact-link">↗ GitHub</a>
+      <a href="#" class="contact-link">↗ Twitter</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 — Your Name</span>
+  <span>Frontend Developer</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
