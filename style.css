@@ -4,13 +4,13 @@
 
 /* ── Variables ─────────────────────────────────────────────── */
 :root {
-  --bg: #080808;
-  --surface: #101010;
-  --border: #1e1e1e;
+  --bg: #141414;
+  --surface: #1c1c1c;
+  --border: #2e2e2e;
   --accent: #c8f542;
   --accent2: #f5425a;
-  --text: #e8e8e8;
-  --muted: #555;
+  --text: #f0f0f0;
+  --muted: #b8b8b8;
   --font-display: 'Syne', sans-serif;
   --font-mono: 'DM Mono', monospace;
 }
@@ -26,6 +26,9 @@ html { scroll-behavior: smooth; }
 
 body {
   background: var(--bg);
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(255,255,255,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 80%, rgba(255,255,255,0.03) 0%, transparent 55%);
   color: var(--text);
   font-family: var(--font-mono);
   font-size: 14px;
@@ -99,13 +102,35 @@ nav.scrolled {
 .nav-logo {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: -0.5px;
   color: var(--text);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  position: relative;
 }
 
-.nav-logo span { color: var(--accent); }
+.nav-logo::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-logo:hover::after { width: 100%; }
+
+.nav-logo span {
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
 
 .nav-links {
   display: flex;
@@ -445,7 +470,36 @@ section {
 .bar:nth-child(8) { height: 75%; animation-delay: 0.7s; }
 .bar.accent { background: rgba(200, 245, 66, 0.3); }
 
-/* Drum Kit Key Preview */
+/* Notes App Preview */
+.notes-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.note-chip {
+  padding: 8px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--muted);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.note-chip:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.add-chip {
+  color: var(--accent);
+  border-color: rgba(200, 245, 66, 0.2);
+  border-style: dashed;
+}
+
+
 .drum-keys-preview {
   display: flex;
   gap: 8px;
@@ -481,46 +535,22 @@ section {
 
 .weather-visual {
   background: linear-gradient(135deg, #0d1b2a 0%, #1a2a3a 100%);
+  overflow: hidden;
+  padding: 0;
 }
 
-.weather-preview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+/* Project Screenshot */
+.project-screenshot {
   width: 100%;
   height: 100%;
-  padding: 32px;
-  text-align: center;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
-.wp-icon {
-  font-size: 52px;
-  animation: float 3s ease-in-out infinite;
-}
-
-.wp-temp {
-  font-family: var(--font-display);
-  font-size: 56px;
-  font-weight: 800;
-  color: var(--accent);
-  line-height: 1;
-}
-
-.wp-city {
-  font-size: 12px;
-  color: var(--muted);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.wp-details {
-  display: flex;
-  gap: 16px;
-  margin-top: 12px;
-  font-size: 11px;
-  color: var(--muted);
+.project-card:hover .project-screenshot {
+  transform: scale(1.03);
 }
 
 @keyframes float {
