@@ -11,8 +11,8 @@
   --accent2: #f5425a;
   --text: #f0f0f0;
   --muted: #b8b8b8;
-  --font-display: 'Syne', sans-serif;
-  --font-mono: 'DM Mono', monospace;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-mono: 'Epilogue', sans-serif;
 }
 
 /* ── Reset ──────────────────────────────────────────────────── */
@@ -103,7 +103,7 @@ nav.scrolled {
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 20px;
-  letter-spacing: -0.5px;
+  letter-spacing: 1px;
   color: var(--text);
   text-decoration: none;
   display: flex;
@@ -169,7 +169,7 @@ section {
   font-size: clamp(36px, 5vw, 64px);
   font-weight: 800;
   line-height: 1;
-  letter-spacing: -1.5px;
+  letter-spacing: 1px;
   margin-bottom: 64px;
 }
 
@@ -201,7 +201,7 @@ section {
   font-size: clamp(60px, 9vw, 130px);
   font-weight: 800;
   line-height: 0.92;
-  letter-spacing: -3px;
+  letter-spacing: 2px;
   color: var(--text);
   max-width: 900px;
   opacity: 0;
@@ -659,7 +659,7 @@ section {
   font-size: clamp(40px, 5vw, 72px);
   font-weight: 800;
   line-height: 1;
-  letter-spacing: -2px;
+  letter-spacing: 1px;
   margin-bottom: 24px;
 }
 
@@ -760,7 +760,7 @@ footer {
     padding-right: 24px;
   }
 
-  .hero-title { letter-spacing: -2px; }
+  .hero-title { letter-spacing: 1px; }
   .hero-stats { display: none; }
   .hero-scroll { display: none; }
 
