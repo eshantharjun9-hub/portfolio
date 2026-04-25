@@ -1,50 +1,16 @@
-# Eshanth Arjun — Portfolio
+# React + Vite
 
-A modern, minimal portfolio website showcasing my frontend development projects and skills.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Live Demo
+Currently, two official plugins are available:
 
-[View Portfolio](https://your-portfolio-url.vercel.app)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Features
+## React Compiler
 
-- Clean, dark-themed design with accent colors
-- Custom animated cursor
-- Smooth scroll reveal animations
-- Responsive layout for all screen sizes
-- Interactive skill bars
-- Project showcase with live demo links
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Projects Featured
+## Expanding the ESLint configuration
 
-1. **Weather App** — Real-time weather app with city search and live API integration
-2. **Drum Kit** — Interactive drum machine with keyboard controls
-3. **My Notes** — Minimal notes app with LocalStorage persistence
-4. **Super Mario Brown** — Browser-based platformer game built with React
-
-## Tech Stack
-
-- HTML5
-- CSS3 (Custom Properties, Grid, Flexbox)
-- Vanilla JavaScript
-- Google Fonts (Bebas Neue, Epilogue)
-
-## Run Locally
-
-```bash
-# Clone the repository
-git clone https://github.com/eshantharjun9-hub/portfolio.git
-
-# Open in browser
-open index.html
-```
-
-## Contact
-
-- [LinkedIn](https://www.linkedin.com/in/eshanth-arjun)
-- [GitHub](https://github.com/eshantharjun9-hub)
-- [Instagram](https://www.instagram.com/eshanthhhhh)
-
----
-
-Built by Eshanth Arjun
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
